@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CorePoint.Db", "src\CorePoint.Db\CorePoint.Db.sqlproj", "{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorePoint.AdminPanel", "src\CorePoint.AdminPanel\CorePoint.AdminPanel.csproj", "{45B606A2-6E04-4C94-8F82-F21715E19E7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF671D4-4C7C-4E55-BE7A-5D99001992B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{45B606A2-6E04-4C94-8F82-F21715E19E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B606A2-6E04-4C94-8F82-F21715E19E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B606A2-6E04-4C94-8F82-F21715E19E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B606A2-6E04-4C94-8F82-F21715E19E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F457E6C9-4616-4CFC-8463-02B4E64E42E0}
+	EndGlobalSection
+EndGlobal
