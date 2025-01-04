@@ -1,6 +1,6 @@
-﻿using CorePoint.Domain.Entities;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
+using CorePoint.Domain.Entities;
 
 namespace CorePoint.Domain.Helper;
 
