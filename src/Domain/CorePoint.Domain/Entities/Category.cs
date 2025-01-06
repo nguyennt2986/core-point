@@ -1,8 +1,14 @@
-﻿namespace CorePoint.Domain.Entities;
+﻿using CorePoint.Domain.Extension;
+
+namespace CorePoint.Domain.Entities;
 
 public record Category
 {
+    //viet 1 attribute để build dynamicparameters ứng với param trong store procedure
+
     public Guid Id { get; set; }
+
+    [DbParameterName("@CategoryName")]
     public string Name { get; set; } = string.Empty;
     public DateTimeOffset CretedOn { get; set; } = DateTimeOffset.UtcNow;
     public DateTimeOffset ModifiedOn { get; set; } = DateTimeOffset.UtcNow;

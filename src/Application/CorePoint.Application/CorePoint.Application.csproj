@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\CorePoint.Domain\CorePoint.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CorePoint.Infrastructure\CorePoint.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

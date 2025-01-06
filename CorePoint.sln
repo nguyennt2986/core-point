@@ -9,23 +9,21 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CorePoint.Db", "src\Db\Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C0FCA762-0270-4D13-ACDA-86BB92823487}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{73ADA949-B01D-4792-BBCD-DCBBBACF7517}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{EC0F3CC8-D8CA-4A56-92FF-F004B1156A65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5BB0241C-50D9-4421-91A2-13E513FCA85A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8534ECB9-D831-47E6-8E84-05D9A5242936}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorePoint.Domain", "src\Domain\CorePoint.Domain\CorePoint.Domain.csproj", "{FBCD2093-ED07-473A-A3B4-CB7BBA3B2488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorePoint.Domain", "src\Domain\CorePoint.Domain\CorePoint.Domain.csproj", "{FBCD2093-ED07-473A-A3B4-CB7BBA3B2488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorePoint.Application", "src\Application\CorePoint.Application\CorePoint.Application.csproj", "{99160C13-1231-4FBB-9DF9-F3D9992DE614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorePoint.Application", "src\Application\CorePoint.Application\CorePoint.Application.csproj", "{99160C13-1231-4FBB-9DF9-F3D9992DE614}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dummies", "Dummies", "{5BBFD4BD-55C0-42E6-B32F-0207863A96B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorePoint.Dummies", "src\Dummies\CorePoint.Dummies\CorePoint.Dummies.csproj", "{BE7D488C-EB1B-4D70-856E-0251749F5B2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorePoint.Dummies", "src\Dummies\CorePoint.Dummies\CorePoint.Dummies.csproj", "{BE7D488C-EB1B-4D70-856E-0251749F5B2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorePoint.Infrastructure", "src\Infrastructure\CorePoint.Infrastructure\CorePoint.Infrastructure.csproj", "{E944BA1D-49C6-4132-986E-90194937672C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorePoint.Infrastructure", "src\Infrastructure\CorePoint.Infrastructure\CorePoint.Infrastructure.csproj", "{E944BA1D-49C6-4132-986E-90194937672C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace CorePoint.Domain.DTOs
+﻿namespace CorePoint.Application
 {
     public class CategoryArgs
     {

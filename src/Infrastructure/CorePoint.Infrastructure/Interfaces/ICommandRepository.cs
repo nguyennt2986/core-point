@@ -1,24 +1,17 @@
-﻿namespace CorePoint.Infrastructure;
+﻿using Dapper;
+
+namespace CorePoint.Infrastructure;
 
 public interface ICommandRepository<T> where T : class
 {
-    ValueTask<bool> CreateAsync(T entity, CancellationToken cancellationToken = default);
-    ValueTask<bool> CreateAsync(T entity, string storeName, CancellationToken cancellationToken = default);
-    bool Create(T entity);
-    bool Create(T entity, string storeName);
+    ValueTask<bool> CreateAsync(DynamicParameters parameters, string storeName,
+        CancellationToken cancellationToken = default);
+    bool Create(DynamicParameters parameters, string storeName);
 
+    ValueTask<bool> UpdateAsync(DynamicParameters parameters, string storeName);
+    bool Update(DynamicParameters parameters, string storeName);
 
-    ValueTask<bool> UpdateAsync(T entity, string storeName);
-    ValueTask<bool> UpdateAsync(T entity);
-    bool Update(T entity, string storeName);
-    bool Update(T entity);
-
-    ValueTask<bool> DeleteAsync(T entity, CancellationToken cancellationToken = default);
-    ValueTask<bool> DeleteAsync(T entity, string storeName, CancellationToken cancellationToken = default);
-    ValueTask<bool> DeleteAsync<TType>(TType id, string storeName, CancellationToken cancellationToken = default);
-    ValueTask<bool> DeleteAsync<TType>(TType id, CancellationToken cancellationToken = default);
-    bool Delete(T entity);
-    bool Delete(T entity, string storeName);
-    bool Delete<TType>(TType id, string storeName);
-    bool Delete<TType>(TType id);
+    ValueTask<bool> DeleteAsync(DynamicParameters parameters, string storeName,
+        CancellationToken cancellationToken = default);
+    bool Delete(DynamicParameters parameters, string storeName);
 }
