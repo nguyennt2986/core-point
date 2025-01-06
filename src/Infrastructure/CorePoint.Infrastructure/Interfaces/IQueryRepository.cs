@@ -2,8 +2,11 @@
 
 public interface IQueryRepository<T> where T : class
 {
-    ValueTask<IQueryable<T>> GetAllAsync(CancellationToken cancellationToken = default);
-    ValueTask<T> GetAsync<TType>(TType id, CancellationToken cancellationToken = default);
-    IQueryable<T> GetAll();
-    T Get<TType>(TType id);
+    ValueTask<IEnumerable<TOutput>> QueryAsync<TOutput>(T args, string storeName,
+        CancellationToken cancellationToken = default);
+    IEnumerable<TOutput> Query<TOutput>(T args, string storeName);
+
+    ValueTask<TOutput?> QuerySingleAsync<TOutput>(T args, string storeName,
+        CancellationToken cancellationToken = default);
+    TOutput? QuerySingleAsync<TOutput>(T args, string storeName);
 }
