@@ -3,6 +3,7 @@
     public enum DateTimeColumnFormat
     {
         DateTime,
-        DateOnly
+        DateOnly,
+        TimeOnly
     }
 }
