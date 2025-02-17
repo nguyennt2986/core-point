@@ -12,4 +12,6 @@ public record Column
     public bool Required { get; init; }
     public bool Sortable { get; init; }
     public bool Groupable { get; init; }
+    public bool IsHidden { get; init; } = false;
+    public ColumnStatus Status { get; init; } = ColumnStatus.Active;
 }

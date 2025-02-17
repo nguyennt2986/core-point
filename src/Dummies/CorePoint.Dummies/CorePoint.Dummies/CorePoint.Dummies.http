@@ -1,0 +1,6 @@
+@CorePoint.Dummies_HostAddress = http://localhost:5254
+
+GET {{CorePoint.Dummies_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
