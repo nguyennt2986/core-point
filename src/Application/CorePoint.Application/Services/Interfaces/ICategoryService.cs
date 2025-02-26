@@ -2,7 +2,7 @@
 
 namespace CorePoint.Application.Services
 {
-    internal interface ICategoryService
+    public interface ICategoryService
     {
         IEnumerable<Category> Get();
         ValueTask<IEnumerable<Category>> GetAsync(CancellationToken cancellationToken = default);

@@ -1,6 +1,6 @@
-﻿using CorePoint.Domain.Extension;
+﻿using System.Reflection;
+using CorePoint.Domain.Extension;
 using Dapper;
-using System.Reflection;
 
 namespace CorePoint.Application
 {

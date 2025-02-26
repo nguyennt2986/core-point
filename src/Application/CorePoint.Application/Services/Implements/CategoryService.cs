@@ -3,7 +3,7 @@ using CorePoint.Infrastructure;
 
 namespace CorePoint.Application.Services;
 
-internal class CategoryService : ICategoryService
+public class CategoryService : ICategoryService
 {
     private readonly IQueryRepository<Category> _queryRepo;
     private readonly ICommandRepository<Category> _commandRepo;

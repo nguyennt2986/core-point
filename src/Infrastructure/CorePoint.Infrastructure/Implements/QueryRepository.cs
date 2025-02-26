@@ -2,7 +2,7 @@
 
 namespace CorePoint.Infrastructure;
 
-internal class QueryRepository<T> : IQueryRepository<T> where T : class
+public class QueryRepository<T> : IQueryRepository<T> where T : class
 {
     private readonly IDbConnection _connection;
 
