@@ -62,7 +62,7 @@ namespace CorePoint.Dummies
                 })
             };
 
-            await CreateCategoryAsync(deptCat);
+            // await CreateCategoryAsync(deptCat);
 
             var empCat = new Category
             {
@@ -109,48 +109,48 @@ namespace CorePoint.Dummies
             throw new NotImplementedException();
         }
 
-        private async ValueTask<long> CreateCategoryAsync(Category category)
-        {
-            var depCatId = _snowflakeIdGenerator.NextId();
+        //private async ValueTask<long> CreateCategoryAsync(Category category)
+        //{
+        //    var depCatId = _snowflakeIdGenerator.NextId();
 
 
-            var deptCat = new Category
-            {
-                Id = _snowflakeIdGenerator.NextId(),
-                Name = "Department",
-                CreatedOn = DateTimeOffset.UtcNow,
-                ModifiedOn = DateTimeOffset.UtcNow,
-                IsHidden = false,
-                IsActive = true,
-                ColumnsJson = JsonSerializer.Serialize(new List<Column>
-                {
-                    new TextColumn
-                    {
-                        Name = "Title",
-                        Title = "Tên phòng ban",
-                        Id = _snowflakeIdGenerator.NextId(),
-                        IsHidden = false,
-                        Required = true
-                    },
-                    new DateTimeColumn
-                    {
-                        Name = "CreatedOn",
-                        Title = "Ngày tạo",
-                        Id = _snowflakeIdGenerator.NextId(),
-                        IsHidden = false,
-                        Required = true
-                    },
-                     new DateTimeColumn
-                    {
-                        Name = "ModifiedOn",
-                        Title = "Ngày chỉnh sửa",
-                        Id = _snowflakeIdGenerator.NextId(),
-                        IsHidden = false,
-                        Required = true
-                    },
-                })
-            };
-        }
+        //    var deptCat = new Category
+        //    {
+        //        Id = _snowflakeIdGenerator.NextId(),
+        //        Name = "Department",
+        //        CreatedOn = DateTimeOffset.UtcNow,
+        //        ModifiedOn = DateTimeOffset.UtcNow,
+        //        IsHidden = false,
+        //        IsActive = true,
+        //        ColumnsJson = JsonSerializer.Serialize(new List<Column>
+        //        {
+        //            new TextColumn
+        //            {
+        //                Name = "Title",
+        //                Title = "Tên phòng ban",
+        //                Id = _snowflakeIdGenerator.NextId(),
+        //                IsHidden = false,
+        //                Required = true
+        //            },
+        //            new DateTimeColumn
+        //            {
+        //                Name = "CreatedOn",
+        //                Title = "Ngày tạo",
+        //                Id = _snowflakeIdGenerator.NextId(),
+        //                IsHidden = false,
+        //                Required = true
+        //            },
+        //             new DateTimeColumn
+        //            {
+        //                Name = "ModifiedOn",
+        //                Title = "Ngày chỉnh sửa",
+        //                Id = _snowflakeIdGenerator.NextId(),
+        //                IsHidden = false,
+        //                Required = true
+        //            },
+        //        })
+        //    };
+        //}
 
         //private async ValueTask<long> CreateDeptCategory()
         //{
