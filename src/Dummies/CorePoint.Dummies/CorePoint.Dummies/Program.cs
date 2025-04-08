@@ -1,5 +1,8 @@
 using CorePoint.Application.Services;
 using CorePoint.Infrastructure;
+using CorePoint.Infrastructure.Configuration;
+using CorePoint.Infrastructure.Helper;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
 builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
+
+builder.Services.AddSingleton(sp =>
+{
+    var options = sp.GetRequiredService<IOptions<SnowflakeConfiguration>>().Value;
+    return new SnowflakeIdGenerator(options.WorkerId, options.DatacenterId);
+});
 
 
 var app = builder.Build();
