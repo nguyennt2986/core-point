@@ -1,8 +1,8 @@
-﻿using System.Text.Json;
+﻿using CorePoint.Domain.Entities;
+using System.Text.Json;
 using System.Text.Json.Serialization;
-using CorePoint.Domain.Entities;
 
-namespace CorePoint.Domain.Helper;
+namespace CorePoint.Domain.Common;
 
 public class ColumnJsonConverter : JsonConverter<Column>
 {

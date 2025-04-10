@@ -1,4 +1,4 @@
-﻿using CorePoint.Domain.Enums.DateTime;
+﻿using CorePoint.Domain.Common.Enums.DateTime;
 
 namespace CorePoint.Domain.Entities;
 

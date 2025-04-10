@@ -1,4 +1,4 @@
-﻿namespace CorePoint.Domain.Enums
+﻿namespace CorePoint.Domain.Common.Enums
 {
     public enum ColumnType
     {

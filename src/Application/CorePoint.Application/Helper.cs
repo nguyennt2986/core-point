@@ -1,4 +1,4 @@
-﻿using CorePoint.Domain.Extension;
+﻿using CorePoint.Domain.Common.Extension;
 using Dapper;
 using System.Reflection;
 

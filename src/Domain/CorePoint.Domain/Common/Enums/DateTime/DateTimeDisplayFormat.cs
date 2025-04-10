@@ -1,4 +1,4 @@
-﻿namespace CorePoint.Domain.Enums.DateTime;
+﻿namespace CorePoint.Domain.Common.Enums.DateTime;
 
 public enum DateTimeDisplayFormat
 {

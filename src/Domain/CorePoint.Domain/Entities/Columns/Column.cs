@@ -1,4 +1,4 @@
-﻿using CorePoint.Domain.Enums;
+﻿using CorePoint.Domain.Common.Enums;
 
 namespace CorePoint.Domain.Entities;
 

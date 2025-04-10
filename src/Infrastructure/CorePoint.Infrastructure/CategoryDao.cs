@@ -1,7 +1,4 @@
-﻿using CorePoint.Domain.DTOs;
-using Dapper;
-
-namespace CorePoint.Infrastructure
+﻿namespace CorePoint.Infrastructure
 {
     public class CategoryDao
     {
@@ -11,10 +8,10 @@ namespace CorePoint.Infrastructure
         {
             _context = context; ;
         }
-        public bool Create(CategoryArgs args)
-        {
-            using var connection = _context.Connection;
-            connection.ExecuteAsync()
-        }
+        //public bool Create(CategoryArgs args)
+        //{
+        //    using var connection = _context.Connection;
+        //    connection.ExecuteAsync()
+        //}
     }
 }

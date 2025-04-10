@@ -1,4 +1,4 @@
-﻿namespace CorePoint.Domain.Extension;
+﻿namespace CorePoint.Domain.Common.Extension;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class DbParameterNameAttribute : Attribute

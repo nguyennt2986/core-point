@@ -1,4 +1,4 @@
-﻿using CorePoint.Domain.Extension;
+﻿using CorePoint.Domain.Common.Extension;
 
 namespace CorePoint.Domain.Entities;
 
